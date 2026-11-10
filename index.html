@@ -18,15 +18,43 @@
 
     <nav>
       <div class="container">
+        <div class="address-form">
+          <div class="address-form-content">
+            <h2>
+              Chọn địa chỉ nhận hàng <span id="close-address">X Đóng</span>
+            </h2>
+            <form action="">
+              <p>
+                Chọn đầy đủ địa chỉ nhận hàng để biết chính xác thời gian giao
+              </p>
+              <select name="" id="">
+                <option value="#">-- Chọn địa điểm</option>
+                <option value="#">Đà Nẵng</option>
+              </select>
+              <select name="" id="">
+                <option value="#">-- Chọn Quận\Huyện</option>
+                <option value="#">Đà Nẵng</option>
+              </select>
+              <select name="" id="">
+                <option value="#">-- Chọn Phường\Xã</option>
+                <option value="#">Đà Nẵng</option>
+              </select>
+              <input type="text" placeholder="Số nhà, Tên đường" />
+              <button>Xác nhận</button>
+            </form>
+          </div>
+        </div>
+
         <ul>
           <li>
             <a href=""
               ><img style="width: 150px" src="images/thegioididong.png" alt=""
             /></a>
           </li>
-          <li>
-            <a href="">Đà Nẵng <i class="fas fa-sort-down"></i></a>
+          <li id="address-form">
+            <a href="#">Đà Nẵng <i class="fas fa-sort-down"></i></a>
           </li>
+
           <li>
             <input type="text" placeholder="Bạn tìm gì..." /><i
               class="fas fa-search"
@@ -54,5 +82,47 @@
         </ul>
       </div>
     </nav>
+
+    <section class="menu-bar">
+      <div class="container">
+        <div class="menu-bar-content">
+          <ul>
+            <li>
+              <a href=""><i class="fas fa-mobile-alt"></i> Điện thoại</a>
+            </li>
+            <li>
+              <a href=""><i class="fas fa-laptop"></i> Laptop</a>
+            </li>
+            <li>
+              <a href=""><i class="fas fa-tablet"></i> Tablet</a>
+            </li>
+            <li>
+              <a href=""
+                ><i class="fas fa-headphones-alt"></i> Phụ kiện
+                <i
+                  style="font-size: 16px; margin-left: 3px"
+                  class="fas fa-sort-down"
+                ></i
+              ></a>
+            </li>
+            <li>
+              <a href=""><i class="fas fa-stopwatch-20"></i> Đồng hồ</a>
+            </li>
+            <li>
+              <a href=""><i class="fas fa-mobile-alt"></i> Điện thoại</a>
+            </li>
+            <li>
+              <a href=""><i class="fas fa-mobile-alt"></i> Điện thoại</a>
+            </li>
+
+            <li><a href="">Máy cũ giá rẻ</a></li>
+            <li><a href="">Sim, thẻ cào</a></li>
+            <li><a href="">Trả góp điện nước</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
   </body>
 </html>

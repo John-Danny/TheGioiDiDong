@@ -70,6 +70,7 @@ nav ul li:nth-child(3) i {
   line-height: 30px;
   cursor: pointer;
 }
+
 nav ul li:nth-child(4) button {
   height: 30px;
   padding: 0 12px;
@@ -133,4 +134,140 @@ nav ul li:nth-child(7):hover a,
 nav ul li:nth-child(8):hover a,
 nav ul li:nth-child(9):hover a {
   color: #fff200;
+}
+
+/* =================== Menu Bar ============== */
+.menu-bar {
+  background-color: #fed100;
+}
+
+.menu-bar ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-bar ul li a {
+  color: #333;
+  font-size: 15px;
+}
+
+.menu-bar ul li i {
+  margin-right: 6px;
+  font-size: 16px;
+}
+
+.menu-bar ul li {
+  padding: 15px 6px;
+  transition: all 0.2s ease;
+}
+
+.menu-bar ul li:hover {
+  background-color: white;
+}
+
+.menu-bar ul li:nth-child(9) {
+  position: relative;
+}
+
+.menu-bar ul li:nth-child(9)::before {
+  position: absolute;
+  content: "Giảm 5%";
+  display: inline-block;
+  width: 45px;
+  height: 15px;
+  background-color: #f51212;
+  border-radius: 5px;
+  top: 0;
+  right: -20px;
+  font-size: 10px;
+  padding-left: 3px;
+  color: white;
+}
+
+.menu-bar ul li:nth-child(9)::after {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  background-color: #f51212;
+  top: 10px;
+  right: 10px;
+  transform: rotate(45deg);
+}
+
+/* ============== Address form  ==============*/
+.address-form {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(0, 0, 0, 0.6);
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #333;
+  display: none;
+  z-index: 999;
+}
+
+.address-form-content {
+  width: 400px;
+  height: 450px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.address-form-content form {
+  padding: 12px 40px;
+}
+
+.address-form-content h2 {
+  font-size: 14px;
+  padding: 12px 0;
+  border-bottom: 1px solid #ddd;
+  position: relative;
+}
+
+.address-form-content h2 span {
+  display: inline-block;
+  position: absolute;
+  height: 30px;
+  padding: 0 6px;
+  border: 1px solid #ddd;
+  right: 12px;
+  cursor: pointer;
+  top: 50%;
+  transform: translateY(-50%);
+  line-height: 30px;
+  color: #333;
+}
+
+.address-form-content form p {
+  font-size: 16px;
+}
+
+.address-form-content form input,
+select {
+  height: 40px;
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+  border: 1px solid #ddd;
+  padding: 6px;
+  border-radius: 5px;
+}
+
+.address-form-content form button {
+  margin-top: 20px;
+  height: 40px;
+  width: 80%;
+  cursor: pointer;
+  background-color: #f97e0e;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  color: white;
 }
