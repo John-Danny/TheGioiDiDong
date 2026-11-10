@@ -156,7 +156,7 @@ nav ul li:nth-child(9):hover a {
   font-size: 16px;
 }
 
-.menu-bar ul li {
+.menu-bar-content > ul > li {
   padding: 15px 6px;
   transition: all 0.2s ease;
 }
@@ -165,11 +165,11 @@ nav ul li:nth-child(9):hover a {
   background-color: white;
 }
 
-.menu-bar ul li:nth-child(9) {
+.menu-bar-content > ul > li:nth-child(9) {
   position: relative;
 }
 
-.menu-bar ul li:nth-child(9)::before {
+.menu-bar-content > ul > li:nth-child(9)::before {
   position: absolute;
   content: "Giảm 5%";
   display: inline-block;
@@ -184,7 +184,7 @@ nav ul li:nth-child(9):hover a {
   color: white;
 }
 
-.menu-bar ul li:nth-child(9)::after {
+.menu-bar-content > ul > li:nth-child(9)::after {
   position: absolute;
   content: "";
   display: inline-block;
@@ -270,4 +270,41 @@ select {
   outline: none;
   border-radius: 5px;
   color: white;
+}
+
+/* ===================== Submenu ==================*/
+.menu-bar-content ul li {
+  position: relative;
+}
+
+.submenu {
+  position: absolute;
+  background-color: #ddd;
+  width: 300px;
+  height: auto;
+  left: 0;
+  top: 100%;
+  padding: 12px;
+  display: none;
+}
+
+.submenu ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.submenu ul li {
+  padding: 6px 0;
+}
+
+.submenu ul li:hover a {
+  color: #fff200;
+}
+
+.submenu ul li:hover {
+  background-color: unset;
+}
+
+.menu-bar-content > ul > li:nth-child(4):hover .submenu {
+  display: block;
 }
