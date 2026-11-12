@@ -83,3 +83,35 @@ function transferImg(i) {
 
   index = i;
 }
+
+// ============== Slider product ===============
+const rightbtnTwo = document.querySelector(".fa-chevron-right-two");
+const leftbtnTwo = document.querySelector(".fa-chevron-left-two");
+const imgNumberTwo = document.querySelectorAll(
+  ".slider-product-one-content-items",
+);
+let indexTwo = 0;
+
+rightbtnTwo.addEventListener("click", () => {
+  indexTwo += 1;
+  if (indexTwo > imgNumberTwo.length - 1) {
+    indexTwo = 0;
+  }
+
+  transferProduct(indexTwo);
+});
+
+leftbtnTwo.addEventListener("click", () => {
+  indexTwo -= 1;
+  if (indexTwo < 0) {
+    indexTwo = imgNumberTwo.length - 1;
+  }
+
+  transferProduct(indexTwo);
+});
+
+function transferProduct(i) {
+  document.querySelector(
+    ".slider-product-one-content-items-content",
+  ).style.right = i * 100 + "%";
+}
