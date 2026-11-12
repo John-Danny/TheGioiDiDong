@@ -21,8 +21,7 @@ rightbtn.addEventListener("click", () => {
     index = 0;
   }
 
-  document.querySelector(".slider-content-left-top").style.right =
-    index * 100 + "%";
+  transferImg(index);
 });
 
 leftbtn.addEventListener("click", () => {
@@ -31,8 +30,7 @@ leftbtn.addEventListener("click", () => {
     index = imgNumber.length - 1;
   }
 
-  document.querySelector(".slider-content-left-top").style.right =
-    index * 100 + "%";
+  transferImg(index);
 });
 
 //  ================== Slider 2 =======================
@@ -56,11 +54,7 @@ let lastActive = 0;
 // Cách 2
 imgNumberLi.forEach((li, index) => {
   li.addEventListener("click", () => {
-    document.querySelector(".slider-content-left-top").style.right =
-      index * 100 + "%";
-
-    removeActive();
-    li.classList.add("active");
+    transferImg(index);
   });
 });
 
@@ -76,10 +70,16 @@ function imgAuto() {
     index = 0;
   }
 
-  document.querySelector(".slider-content-left-top").style.right =
-    index * 100 + "%";
-  removeActive();
-  imgNumberLi[index].classList.add("active");
+  transferImg(index);
 }
 
 setInterval(imgAuto, 5000);
+
+function transferImg(i) {
+  document.querySelector(".slider-content-left-top").style.right =
+    i * 100 + "%";
+  removeActive();
+  imgNumberLi[i].classList.add("active");
+
+  index = i;
+}
