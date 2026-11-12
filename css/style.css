@@ -709,3 +709,120 @@ li {
 .product-gallery-one-content-title ul li:hover a {
   color: #fb6e2e;
 }
+
+/* ==================== Footer ================== */
+footer {
+  margin-top: 40px;
+  padding: 18px 20px 32px;
+  border-top: 1px solid #ddd;
+  background-color: #fff;
+  color: #333;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: 1.35fr 1fr 1.15fr 1.5fr;
+  gap: 24px;
+}
+
+.footer-column {
+  min-width: 0;
+}
+
+.footer-column h2 {
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.footer-column li + li {
+  margin-top: 8px;
+}
+
+footer a {
+  color: #333;
+}
+
+footer a:hover {
+  color: #288ad6;
+  text-decoration: underline;
+}
+
+footer a:focus-visible {
+  outline: 2px solid #288ad6;
+  outline-offset: 3px;
+}
+
+.footer-support li {
+  display: flex;
+  align-items: flex-end;
+  gap: 8px;
+}
+
+.footer-support li > span {
+  flex: 0 0 88px;
+}
+
+.footer-support li > div {
+  min-width: 0;
+}
+
+.footer-support a {
+  color: #288ad6;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.footer-group h2 {
+  font-weight: 400;
+}
+
+.footer-brands {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.footer-brands li + li {
+  margin-top: 0;
+}
+
+.footer-brands a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 25px;
+  height: 100%;
+  padding: 3px;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 9px;
+  font-weight: 700;
+  font-style: italic;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.footer-brands a:hover {
+  color: #fff;
+  text-decoration: none;
+  filter: brightness(0.9);
+}
+
+.brand-topzone {
+  background-color: #111;
+}
+.brand-topzone span {
+  color: #4fc6a4;
+}
+.brand-dienmay {
+  background-color: #008edb;
+}
+.brand-bachhoa {
+  background-color: #008744;
+}
+.brand-ankhang {
+  background-color: #45b649;
+}
